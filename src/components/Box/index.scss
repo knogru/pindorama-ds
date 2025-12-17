@@ -1,0 +1,15 @@
+/**
+ * Box component styles
+ * Uses CSS variables from theme for consistent styling
+ */
+
+.pindorama-box {
+  box-sizing: border-box;
+  
+  // Ensure proper rendering
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+

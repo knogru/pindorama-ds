@@ -1,6 +1,5 @@
 /**
  * Theme Context and Provider
- * Provides theme tokens and mode management throughout the application
  */
 
 import React, { createContext, useEffect, useState, useMemo } from 'react'
@@ -31,7 +30,6 @@ const getResolvedMode = (mode: ThemeMode): 'light' | 'dark' => {
 
 /**
  * ThemeProvider component
- * Wraps the application and provides theme context
  */
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   children,
@@ -190,6 +188,5 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   )
 }
 
-// Export the context for direct access if needed
 export { ThemeContext }
 
